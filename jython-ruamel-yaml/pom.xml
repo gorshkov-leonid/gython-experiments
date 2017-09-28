@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ru.goleon.jython.libs</groupId>
+    <artifactId>jython-ruamel-yaml</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>jython-ruamel-yaml</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>ru.goleon.jython.plugins</groupId>
+                <artifactId>jython-compiler-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <configuration>
+                    <includeModules>
+                        <includeModule>ruamel.yaml</includeModule>
+                    </includeModules>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>aaa</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>
+                                compile
+                            </goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
